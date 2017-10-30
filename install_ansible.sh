@@ -23,7 +23,7 @@ printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
 echo "${YEL} checking if you run this script before ${NC}"
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
 
-if [ $(which ansible-playbook) ]; then
+if [ ! $(which ansible-playbook) ]; then
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
   echo "${YEL} you did not .. we will check which linux destro are you running ${NC}"
   printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
