@@ -216,7 +216,7 @@ if [ ! $(which ansible-playbook) ]; then
     fi
   fi
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
-echo "${YEL} you are all set .. bye bye ${NC}"
+echo "${YEL} you are all set ... bye bye ${NC}"
 printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
 
 else
